@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    agent
+    {
+        label 'devserver'
+    }
     stages {
         stage (build)
         {
